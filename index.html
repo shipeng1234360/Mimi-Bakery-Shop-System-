@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Mimi Bakery</title>
+
+
+</head>
+
+<body>
+    <header>
+        <!-- Navigation Bar -->
+        <nav class="topnav">
+
+            <a href="index.html" "#">Home</a>&nbsp;
+            <a href="orderform.html" style="float: right; " #">Order Now</a>&nbsp;
+            <a href="registerForm.html" style="float: right; " #">Register Now</a>&nbsp;
+            <a href="FeedbackForm.html""#">Customer Feedback</a>&nbsp;
+            <link href="style.css" rel="stylesheet" />
+            
+        </nav>
+
+        <h1>Mimi Bakery</h1>
+    </header>
+
+    <h2>Welcome to Mimi's Bakery.</h2>
+    <p>You can order all sorts of cakes and breads. There is also a section that provides some easy to make recipes for
+        people who want to bake themselves something.</p>
+    <h3>Background music</h3>
+    <iframe style="display: none;" src="250-milliseconds-of-silence.mp3"></iframe>
+
+    <audio id="myaudio" autoplay="autoplay" loop="loop" controls="controls">
+        <source src="candyland.mp3" type="audio/mp3" />
+    </audio>
+
+    <script>
+        var audio = document.getElementById("myaudio");
+        audio.volume = 0.05;
+    </script>
+</body>
+
+<div class="container">
+    <div class="menu">
+        <img src="cake.jpg" width="350" height="263" alt="cake">
+        <h2>Cakes</h2>
+        <p>This will be the place where you can discover all sorts of delicious cakes made by Mimi~</p>
+        <a class="button" href="cakes.html">Click here to find out</a>
+    </div>
+
+    <div class="menu">
+        <img src="bread.jpg" width="350" height="263" alt="cake">
+        <h2>Bread</h2>
+        <p>Freshly baked bread made by Mimi</p>
+        <a class="button" href="breads.html">Click here to find out</a>
+    </div>
+
+    <div class="menu">
+        <img src="recipe.png" width="350" height="263" alt="recipe">
+        <h2>Recipes</h2>
+        <p>Recipes for those who are interested in baking themselves~</p>
+        <a class="button" href="recipes.html">Click here to find out</a>
+    </div>
+
+    <div class="menu">
+        <h2>The Best YouTube Baking Channels</h2>
+        <iframe width="400" height="263" src="https://www.youtube.com/embed/Nx7WK3Hjb6U" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+    </div>
+</div>
+
+
+
+<footer>
+
+</footer>
+
+</html>

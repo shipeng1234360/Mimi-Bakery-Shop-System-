@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Customer Feedback</title>
+        <nav class="topnav">
+
+            <a href="index.html" "#">Home</a>&nbsp;
+            <a href="orderform.html" style="float: right; "#">Order Now</a>&nbsp;
+            <a href="registerForm.html" style="float: right; "#">Register Now</a>&nbsp;
+            <a href="FeedbackForm.html""#">Customer Feedback</a>&nbsp;
+            <link href="feedback.css" rel="stylesheet"/>
+        </nav>
+        
+        <!--JavaScript-->
+        <script src="feedback.js"> </script>
+    </head>
+
+    <body>
+
+        <!--Title-->
+        <section>
+            <header>
+                <h1>Customer Feedback</h1>
+            </header><br>
+
+            <div class="t1">
+                Thank you for shopping with Mimi Bakery. We value all our customers and continue to strive for better services.
+            </div><br>
+            
+            <form method="post" action="index.html" onsubmit="return validateForm()">
+                <fieldset>
+                    <!--First Visit-->
+                    <p>Is this your first visit/using our services? <label style="color: red;">*</style></p>
+                    <label for="yes">Yes</label> 
+                    <input type ="radio" name="option" id="yes" value="yes">
+                    <label for="no">No</label> 
+                    <input type ="radio" name="option" id="no" value="no">
+                    <br></br><p></p>
+
+                    <!--Date-->
+                    <p>Please tell us the <b>Date</b> you last shop with us!<label style="color: red;">*</style></p>
+                    <input type="date" name="date" id="date" style="height:40px"/>
+                    <br></br>
+                    
+                    <!--Satisfaction-->
+                    <p>Did our products satisfied you? <label style="color: red;">*</style></p>
+                    <label for="yes2">Yes</label> 
+                    <input type ="radio" name="option2" id="yes2" value="yes2">
+                    <label for="no2">No</label> 
+                    <input type ="radio" name="option2" id="no2" value="no2">
+                    <label for="somewhat">Somewhat</label>
+                    <input type ="radio" name="option2" id="somewhat" value="somewhat">             
+                    <br></br>
+
+                    <!--Manner-->
+                    <p>Did our products delivered on time? <label style="color: red;">*</style></p>
+                    <label for="yes3">Yes</label> 
+                    <input type ="radio" name="option3" id="yes3" value="yes3">
+                    <label for="no3">No</label> 
+                    <input type ="radio" name="option3" id="no3" value="no3">
+                    <br></br>
+
+                    <!--Difficulty-->
+                    <p>Did you experience difficulties on using our services? <label style="color: red;">*</style></p>
+                    <label for="yes4">Yes</label> 
+                    <input type ="radio" name="option4" id="yes4" value="yes4">
+                    <label for="no4">No</label> 
+                    <input type ="radio" name="option4" id="no4" value="no4">
+                    <br>
+                    <p>Comments:</p>
+                    <input type="text" name="comment" id="comment" style="height:60px" size="60"/>
+                    <br></br>
+
+                    <!--Comment-->
+                    <p>Tell us what to improve:</p>
+                    <input type="text" name="comment2" id="comment2" style="height:100px" size="60"/>
+                    <br></br>
+                    <br></br>
+
+                    <!--Button-->
+                    <div style="text-align:center">
+                        <input type="submit" value="Submit">
+                    </div>
+
+                </fieldset>
+            </form>
+        </section>
+    </body>
+</html>
